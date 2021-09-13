@@ -9,22 +9,34 @@ import java.util.Scanner;
 
 public class exercise {
     public static void main(String[] args) {
-        // prompt for quote
-        System.out.print("What is the quote? ");
+        // prompt for noun
+        System.out.print("Enter a noun: ");
 
         // create new scanner
         Scanner input = new Scanner(System.in);
 
-        // read user's quote
-        String quote = input.nextLine();
+        // read noun
+        String noun = input.nextLine();
 
-        // prompt for author
-        System.out.print("Who said it? ");
+        // prompt for verb
+        System.out.print("Enter a verb: ");
 
-        // read user's author
-        String author = input.nextLine();
+        // read verb
+        String verb = input.nextLine();
 
-        // output
-        System.out.print(author + " says, " + "\"" + quote + "\"");
+        // prompt for adjective
+        System.out.print("Enter an adjective: ");
+
+        // read adjective
+        String adjective = input.nextLine();
+
+        // prompt for adverb
+        System.out.print("Enter an adverb: ");
+
+        // read adverb
+        String adverb = input.nextLine();
+
+        // output madlib
+        System.out.print("Do you " + verb + " your " + adjective + " " + noun + " " + adverb + "? That's hilarious!");
     }
 }
